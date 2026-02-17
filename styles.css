@@ -1,0 +1,164 @@
+/* ===== ESTILO GLOBAL ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  color: #f9fbff;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #3b0d63, #e0007a, #00c4d6);
+  background-attachment: fixed;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px 60px;
+}
+
+h1, h2 {
+  letter-spacing: 0.04em;
+}
+
+h1 {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.7rem;
+  margin-bottom: 15px;
+}
+
+p {
+  margin-bottom: 10px;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+/* ===== TARJETAS ===== */
+section {
+  margin-bottom: 40px;
+  border-radius: 18px;
+  padding: 24px 26px;
+  background: rgba(6, 10, 30, 0.55);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ===== SOBRE MÍ ===== */
+.sobre-mi {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+}
+
+.sobre-mi-contenido {
+  flex: 1 1 260px;
+}
+
+.sobre-mi-imagen img {
+  width: 360px;
+  max-width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* ===== LISTA TENS ===== */
+.checklist-tens {
+  margin-top: 20px;
+  padding-left: 20px;
+  list-style: none;
+}
+
+.checklist-tens li {
+  margin-bottom: 10px;
+  padding-left: 28px;
+  position: relative;
+  line-height: 1.6;
+}
+
+.checklist-tens li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #7fe9ff;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.tens-imagen img {
+  width: 260px;
+  margin-top: 15px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+/* ===== DOCENCIA ===== */
+.salud-digital-docencia {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+}
+
+.docencia-contenido {
+  flex: 1 1 260px;
+}
+
+/* ===== CV Y CONTACTO ===== */
+.cv-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.cv-bloque,
+.contacto-bloque {
+  background: rgba(10, 16, 45, 0.85);
+  border-radius: 16px;
+  padding: 22px 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.btn-cv {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #00c4d6, #e0007a);
+  color: #0b0f1f;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  transition: 0.2s ease;
+}
+
+.btn-cv:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.05);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .sobre-mi,
+  .salud-digital-docencia {
+    flex-direction: column;
+  }
+
+  .sobre-mi-imagen img {
+    width: 100%;
+  }
+}
