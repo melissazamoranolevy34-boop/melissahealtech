@@ -151,6 +151,39 @@ section {
   filter: brightness(1.05);
 }
 
+/* ===== BOTONES FUTURISTAS ===== */
+.contact-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 280px;
+  margin-top: 12px;
+}
+
+.btn-contact {
+  display: block;
+  text-align: center;
+  padding: 14px 22px;
+  background: linear-gradient(135deg, #00c4d6, #e0007a);
+  color: #0b0f1f;
+  text-decoration: none;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  border-radius: 14px;
+  letter-spacing: 0.05em;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.55),
+              0 0 12px rgba(224, 0, 122, 0.55);
+  transition: 0.25s ease;
+  backdrop-filter: blur(6px);
+}
+
+.btn-contact:hover {
+  transform: translateY(-3px) scale(1.02);
+  filter: brightness(1.15);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.65),
+              0 0 18px rgba(0, 196, 214, 0.7);
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   .sobre-mi,
@@ -162,3 +195,5 @@ section {
     width: 100%;
   }
 }
+
+
